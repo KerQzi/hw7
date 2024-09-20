@@ -1,10 +1,7 @@
 public class Magic extends Hero{
-    public Magic(int health, int damage, String superAbilityType) {
-        super(health, damage, superAbilityType);
-    }
 
     @Override
     public void applySuperAbility() {
-        System.out.println("Magic use his Super Ability - " + getSuperAbilityType());
+        System.out.println("Magic use his Super Ability - FIRE BALL");
     }
 }

@@ -1,10 +1,7 @@
-public class Warrior extends Hero{
-    public Warrior(int health, int damage, String superAbilityType) {
-        super(health, damage, superAbilityType);
-    }
+public class Warrior extends Hero {
 
     @Override
     public void applySuperAbility() {
-        System.out.println("Warrior use his Super Ability - " + getSuperAbilityType());
+        System.out.println("Warrior use his Super Ability - CRITICAL DAMAGE");
     }
 }

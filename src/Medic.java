@@ -1,10 +1,6 @@
 public class Medic extends Hero{
     private double healPoints = 35;
 
-    public Medic(int health, int damage, String superAbilityType) {
-        super(health, damage, superAbilityType);
-    }
-
     public void increaseExperience() {
         int percentageIncrease = 10;
         healPoints = healPoints + ((healPoints * percentageIncrease) / 100);
@@ -15,12 +11,8 @@ public class Medic extends Hero{
         return healPoints;
     }
 
-    public void setHealPoints(double healPoints) {
-        this.healPoints = healPoints;
-    }
-
     @Override
     public void applySuperAbility() {
-        System.out.println("Medic use his Super Ability - " + getSuperAbilityType());
+        System.out.println("Medic use his Super Ability - HEALING");
     }
 }
